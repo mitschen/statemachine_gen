@@ -1,0 +1,8 @@
+Some patterns we must search for to
+
+State to State with optional transition
+(\w+)\s*-\w*->\s*(\w+)\s*(:\s*\w*)? 
+Initialize 
+\[\s*\*\s*\]\s*-\w*->\s*(\w+)\s*(:\s*\w*)?
+Terminate
+(\w+)\s*-\w*->\s*\[\s*\*\s*\]\s*(:\s*\w*)?

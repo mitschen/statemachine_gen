@@ -1,0 +1,13 @@
+@startuml
+[*] --> Run
+Run  -->[*]
+Run -->  Pause : pause
+Run: entry / call_execute
+Run: exit / stop_execute
+Run: do / call_execute
+Run: event(mango) / makeItSo
+Run: [H]
+'Run <-- Pause : resume'
+Pause --> Run : resume
+Pause --> [*]
+@enduml
